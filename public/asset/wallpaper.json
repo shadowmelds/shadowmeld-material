@@ -1,0 +1,63 @@
+{
+  "tag": [
+    "ChromeOS"
+  ],
+
+  "wallpaper": {
+    "0": {
+      "photoUrl": "Blues.jpg",
+      "description": "Blues",
+      "date": "2023-09-04",
+      "resolution": "2960x2960",
+      "tags": [
+        "ChromeOS"
+      ]
+    },
+    "1": {
+      "id": 1,
+      "photoUrl": "BluesDark.png",
+      "description": "BluesDark",
+      "date": "2023-09-04",
+      "resolution": "2960x2960",
+      "tags": [
+        "ChromeOS"
+      ]
+    },
+    "2": {
+      "photoUrl": "Greens.jpg",
+      "description": "Greens",
+      "date": "2023-09-04",
+      "resolution": "2960x2960",
+      "tags": [
+        "ChromeOS"
+      ]
+    },
+    "3": {
+      "photoUrl": "GreensDark.png",
+      "description": "GreensDark",
+      "date": "2023-09-04",
+      "resolution": "2960x2960",
+      "tags": [
+        "ChromeOS"
+      ]
+    },
+    "4": {
+      "photoUrl": "Reds.jpg",
+      "description": "Reds",
+      "date": "2023-09-04",
+      "resolution": "2960x2960",
+      "tags": [
+        "ChromeOS"
+      ]
+    },
+    "5": {
+      "photoUrl": "RedsDark.png",
+      "description": "RedsDark",
+      "date": "2023-09-04",
+      "resolution": "2960x2960",
+      "tags": [
+        "ChromeOS"
+      ]
+    }
+  }
+}

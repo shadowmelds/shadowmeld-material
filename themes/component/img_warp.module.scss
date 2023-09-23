@@ -1,0 +1,42 @@
+#img_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-24);
+  margin: var(--space-32) 0;
+
+  .placeholder {
+    flex-grow: 100;
+    flex-basis: 240px;
+    height: 0;
+    margin: 0;
+  }
+
+  .img_x {
+    position: relative;
+    cursor:pointer;
+  }
+
+  .img_x > img {
+    position: absolute;
+    vertical-align: bottom;
+    top: 0;
+    min-width: 100%;
+    max-width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    border-radius: var(--space-20);
+  }
+
+  .img_x > i {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #img_wrap {
+    .img_x {
+      //flex-basis: 300px;
+    }
+  }
+
+}

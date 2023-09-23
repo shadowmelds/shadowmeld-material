@@ -1,0 +1,84 @@
+{
+  "skill": [
+    {
+      "id": 0,
+      "title": "Android",
+      "icon": "android.svg",
+      "primary": "#9beab8",
+      "border": "#3ddc84",
+      "rating": 70
+    },
+    {
+      "id": 1,
+      "title": "Material Design",
+      "icon": "material-design.svg",
+      "primary": "#a980fb",
+      "border": "#6817f6",
+      "rating": 30
+    },
+    {
+      "id": 2,
+      "title": "Kotlin",
+      "icon": "language-kotlin.svg",
+      "primary": "#a7b1fa",
+      "border": "#6779f6",
+      "rating": 63
+    },
+    {
+      "id": 3,
+      "title": "Java",
+      "icon": "java.svg",
+      "primary": "#f6bb87",
+      "border": "#ed8a16",
+      "rating": 60
+    },
+    {
+      "id": 4,
+      "title": "TypeScript",
+      "icon": "typescript.svg",
+      "primary": "#82b2e2",
+      "border": "#007acc",
+      "rating": 19
+    },
+    {
+      "id": 5,
+      "title": "CSS3",
+      "icon": "css-3-logo.svg",
+      "primary": "#88b7dc",
+      "border": "#1b84c2",
+      "rating": 26
+    },
+    {
+      "id": 6,
+      "title": "HTML5",
+      "icon": "html5.svg",
+      "primary": "#f8a78b",
+      "border": "#f16528",
+      "rating": 24
+    },
+    {
+      "id": 7,
+      "title": "Overwatch",
+      "icon": "overwatch.svg",
+      "primary": "#f8a685",
+      "border": "#f06314",
+      "rating": 48
+    },
+    {
+      "id": 8,
+      "title": "Figma",
+      "icon": "figma_outline.svg",
+      "primary": "#f4b1ac",
+      "border": "#f86f60",
+      "rating": 20
+    },
+    {
+      "id": 9,
+      "title": "Blender",
+      "icon": "blender.svg",
+      "primary": "#f3b385",
+      "border": "#e87c0f",
+      "rating": 20
+    }
+  ]
+}

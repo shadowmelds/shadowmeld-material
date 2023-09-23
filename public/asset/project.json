@@ -1,0 +1,24 @@
+{
+    "project": [
+        {
+            "id": 0,
+            "item": "dev",
+            "title": "shadowmeld-material",
+            "content": "当前网站使用 Figma 设计，并使用 NextJS 13 开发",
+            "url": "https://github.com/shadowmelds/shadowmeld-next",
+            "img": [
+                "shadowmeld-material-design.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "item": "dev",
+            "title": "shadowmeld-next",
+            "content": "上个版本网站使用 Adobe XD 设计，并使用 NextJS 13 开发",
+            "url": "https://github.com/shadowmelds/shadowmeld-next",
+            "img": [
+                "shadowmeld-next-design.jpg"
+            ]
+        }
+    ]
+}

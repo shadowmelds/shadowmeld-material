@@ -1,0 +1,37 @@
+{
+  "name": "shadowmeld-material",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "server": "node server.js",
+    "serverstart": "NODE_ENV=production node server.js",
+    "watch": "node watch.js"
+  },
+  "dependencies": {
+    "@material/material-color-utilities": "^0.2.7",
+    "@types/node": "20.6.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "express": "^4.17.3",
+    "highlight.js": "^11.7.0",
+    "markdown-it": "^13.0.0",
+    "markdown-it-deflist": "^2.1.0",
+    "next": "13.4.19",
+    "node-sass": "^9.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.32.4",
+    "typescript": "5.2.2",
+    "ws": "^8.12.1"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}
