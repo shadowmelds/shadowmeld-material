@@ -16,10 +16,12 @@
   gap: var(--space-16);
 
   a {
-    display: block;
+    display: flex;
+    flex-direction: row;
     transition: all 0.2s ease-in-out 0s;
     border-radius: var(--space-18);
     overflow: hidden;
+    align-items: center;
     color: var(--on-surface);
 
     &:hover, &:focus {
@@ -38,7 +40,8 @@
     img {
       width: 100%;
       height: auto;
-      aspect-ratio: 16/9;
+      max-width: 140px;
+      max-height: 120px;
       object-fit: cover;
       object-position: center center;
       border-radius: var(--space-20);
@@ -49,14 +52,14 @@
     }
 
     h3 {
-      font-size: var(--fontSizes-4xl);
-      margin: var(--space-28) 0 var(--space-16) 0;
+      font-size: var(--fontSizes-2xl);
+      margin: var(--space-16) 0 var(--space-8) 0;
       line-height: 1.2;
     }
 
     .content, .date {
       font-size: var(--fontSizes-xs);
-      margin: var(--space-16) 0;
+      margin: var(--space-8) 0;
     }
 
     .date {
@@ -83,5 +86,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-64);
+
+    a {
+      flex-direction: column;
+      align-items: start;
+
+      img {
+        max-width: initial;
+        max-height: initial;
+        aspect-ratio: 16/9;
+      }
+
+      h3 {
+        font-size: var(--fontSizes-4xl);
+        margin: var(--space-28) 0 var(--space-16) 0;
+        line-height: 1.2;
+      }
+
+      .content, .date {
+        font-size: var(--fontSizes-xs);
+        margin: var(--space-16) 0;
+      }
+    }
   }
 }
