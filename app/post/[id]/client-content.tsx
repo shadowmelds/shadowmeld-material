@@ -4,6 +4,7 @@ import style from "../../../themes/post_id.module.scss";
 import {HotLoad} from "@/app_module/hot-load";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
+import {scrollToTop} from "@/app_module/utils";
 
 export function ClientContent({url, post}) {
 
@@ -68,6 +69,7 @@ export function ClientContent({url, post}) {
         if (loadDir == false) {
             if (typeof document !== 'undefined') {
                 initMarkdown(postData)
+                scrollToTop()
             }
         }
     })
@@ -109,10 +111,6 @@ export function ClientContent({url, post}) {
                 </div>
 
                 <div className="floating-button-cta">
-
-                    <button className={`floating-action-button floating-button-menu ${style['floating-button-menu']}`} id='floating-button-menu'>
-                        <span className="material-icons float-icon">menu</span>
-                    </button>
 
                     <button className="floating-action-button" id="floating-button-top">
                         <span className="material-icons float-icon">expand_less</span>
