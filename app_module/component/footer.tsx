@@ -51,7 +51,7 @@ export interface NavigationData {
 export const navigationItem: NavigationData[] = [
     {
         name: "关于",
-        href: "/post/about/about"
+        href: "/post/about"
     },
     {
         name: "短文",
