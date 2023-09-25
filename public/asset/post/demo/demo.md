@@ -1,4 +1,4 @@
-![代表头像](/asset/post/img/avr.png "Shadowmeld")
+![代表头像](/asset/post/demo/shadowmeld.png "Shadowmeld")
 
 # Demo
 

@@ -5,8 +5,8 @@ import style from "../../../themes/post_id.module.scss"
 
 export default async function Page({params}) {
 
-    const url = `/asset/post/${params.id}.md`
-    const markdown = await getMarkdown(`${params.id}.md`)
+    const url = `/asset/post/${params.id}/${params.id}.md`
+    const markdown = await getMarkdown(`${params.id}`)
 
     return (
         <section className={`total_toolbar_padding`}>

@@ -15,8 +15,8 @@ export default async function Page() {
                                 {
                                     data.postData["post"][category].map((post) => (
                                         <li key={post.title}>
-                                            <Link href={`/post/${post.url.replace(/\.md$/, '')}`}>
-                                                <img src={`/asset/post/img/${post.image}`} alt=""/>
+                                            <Link href={`/post/${post.url}`}>
+                                                <img src={`/asset/post/${post.url}/${post.image}`} alt=""/>
                                                 <div className={style.post_info}>
                                                     <h3>{post.title}</h3>
                                                     <p className={style.content}>{post.content}</p>

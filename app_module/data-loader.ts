@@ -57,7 +57,7 @@ export async function getPost() {
 
 export async function getMarkdown(fileName) {
 
-    const filePath = path.join(process.cwd(), `public/asset/post/${fileName}`);
+    const filePath = path.join(process.cwd(), `public/asset/post/${fileName}/${fileName}.md`);
     const markdown: string = await fsPromises.readFile(filePath, "utf8");
     // @ts-ignore
     return markdown

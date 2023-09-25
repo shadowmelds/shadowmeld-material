@@ -1,4 +1,4 @@
-<img class="cover" src="/asset/post/img/012.jpg" alt="cover">
+<img class="cover" src="/asset/post/uses/012.jpg" alt="cover">
 
 # 我使用了哪些工具？
 
