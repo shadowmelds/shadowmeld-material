@@ -25,8 +25,8 @@ function _HotLoad({ setPost, params }: any) {
         instance.ws.onmessage = async (res: any) => {
             const data = JSON.parse(res.data)
             if (data.event === 'markdown-changed') {
-                console.log(`data.path:${asPath.indexOf(data.path)}`)
-                if (asPath.indexOf(data.path) != -1) {
+                console.log(`asPath:${asPath.substring(asPath.lastIndexOf("/") + 1)} data.path:${data.path}`)
+                if (data.path.indexOf(asPath.substring(asPath.lastIndexOf("/") + 1)) != -1) {
                     console.log(`params:${params}`)
                     const post = await getPreviewData(params)
                     console.log(`post:${post}`)
