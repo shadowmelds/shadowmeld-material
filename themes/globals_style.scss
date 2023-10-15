@@ -150,11 +150,11 @@
 }
 /* 滚动槽 */
 ::-webkit-scrollbar-track {
-  background: var(--scrollbar-track);
+  background: var(--surface);
   opacity:0.2;
 }
 /* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background: var(--scrollbar-thumb);
+  background: var(--secondary-container);
 }
