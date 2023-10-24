@@ -5,6 +5,7 @@ import {HotLoad} from "@/app_module/hot-load";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import {scrollToTop} from "@/app_module/utils";
+import {PostDir} from "@/app/post/[id]/post-dir";
 
 export function ClientContent({url, post}) {
 
@@ -97,6 +98,14 @@ export function ClientContent({url, post}) {
     return (
 
         <>
+
+            <div className={style.dir} id='dir'>
+                <nav className={style['dir-cta']} id={style['dir-cta']}>
+                    <PostDir loadDir={loadDir}/>
+                </nav>
+            </div>
+            <div className="sitemask"></div>
+
             <div className={`${style['posts-content']}`}>
                 <div>
                     <div className={style.post}>
@@ -111,6 +120,10 @@ export function ClientContent({url, post}) {
                 </div>
 
                 <div className="floating-button-cta">
+
+                    <button className={`floating-action-button floating-button-menu ${style['floating-button-menu']}`} id='floating-button-menu'>
+                        <span className="material-icons float-icon">menu</span>
+                    </button>
 
                     <button className="floating-action-button" id="floating-button-top">
                         <span className="material-icons float-icon">expand_less</span>

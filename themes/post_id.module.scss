@@ -2,23 +2,25 @@
 
   // 目录
 .posts-dir {
+  padding-top: var(---totalToolbarHeight);
+  padding-bottom: var(--space-16);
 
   .divider {
-    margin: var(--space-8) 0 var(--space-18) 0;
+    margin: var(--space-8) 0 var(--space-8) 0;
     border-top-color: var(--surface-dim);
   }
 
   a.dir-main-h1 {
     text-decoration: none;
     display: block;
-    margin: var(--space-24) 0.8rem 0 0.8rem;
+    margin: 0 0.8rem 0 0.8rem;
     padding: 0.6em 1rem;
     border-radius: 50px;
     color: var(--on-surface-variant);
     font-size: var(--fontSizes-sm);
 
     &:hover {
-      background-color: var(--primary);
+      background-color: var(--surface-container);
     }
   }
 
@@ -39,7 +41,7 @@
       color: var(--on-surface-variant);
 
       &:hover {
-        background-color: var(--primary);
+        background-color: var(--surface-container);
       }
     }
 
@@ -86,6 +88,68 @@
   }
 }
 
+.dir.visible {
+  visibility: visible;
+  transform: translateX(0)!important;
+  transition: transform .2s cubic-bezier(.4,0,.2,1),-webkit-transform .2s cubic-bezier(.4,0,.2,1);
+}
+
+.dir {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  width: auto;
+  max-width: var(--dirWidth);
+  min-width: var(--dirWidth);
+  display: block;
+  transform: translate(-300px);
+  transition: transform .2s cubic-bezier(.4,0,.2,1),-webkit-transform .2s cubic-bezier(.4,0,.2,1);
+  box-shadow: unset;
+
+  /* 设置滚动条的样式 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-button{
+    height: 25px;          /* 纵向滚动条 高度 */
+    background: transparent;
+    border-radius: 10px;
+  }
+  /* 滚动槽 */
+  ::-webkit-scrollbar-track {
+    background: var(--divider);
+    opacity:0.2;
+    border-radius: 8px;
+  }
+  /* 滚动条滑块 */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #c7c7c7;;
+  }
+
+  .dir-cta {
+    box-shadow: none;
+    position: unset;
+    max-height: unset;
+    height: 100vh;
+    margin: 0;
+    border: unset;
+    border-radius: 0 16px 16px 0;
+    box-sizing: border-box;
+    top: 0;
+    display: block;
+    overflow: auto;
+    align-self: flex-end;
+    border: 2px solid var(--surface-dim);
+    background-color: var(--surface-container);
+    border: unset;
+  }
+}
+
 
 //普通桌面端
 @media only screen and (min-width: 768px) {
@@ -100,5 +164,40 @@
 
   .post {
     padding: 0 0;
+  }
+}
+
+
+@media screen and (min-width: 1640px) {
+
+  .dir {
+    display: block;
+    position: fixed;
+    min-width: var(--dirWidth);
+    margin: 0;
+    bottom: 0;
+    top: 0;
+    right: auto;
+    left: calc((100vw / 2) + (var(--sizes-max-site-width) / 2) + var(--space-32));;
+    box-shadow: 0 1px 2px 0 #bdc1c6;
+    z-index: 999;
+    transform: none;
+    visibility: visible;
+
+    .dir-cta {
+      box-sizing: border-box;
+      position: sticky;
+      top: 0;
+      display: block;
+      overflow: auto;
+      align-self: flex-end;
+      border: 2px solid var(--border-color);
+      background-color: var(--surface-color);
+      box-shadow: none;
+      height: 100vh;
+      border: unset;
+      border-radius: 0 16px 16px 0;
+
+    }
   }
 }

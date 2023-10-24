@@ -35,13 +35,14 @@
   }
   /* 滚动槽 */
   ::-webkit-scrollbar-track {
-    background: var(--on-surface-variant);
-    opacity:0.2;
+    background: var(--surface-container);
+    color: #9ccc65;
+    opacity: 0.2;
   }
   /* 滚动条滑块 */
   ::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background: var(--surface-container);
+    background: var(--secondary-container);
   }
 
   &::selection {
@@ -339,7 +340,7 @@
       font-size: .8rem
     }
   }
-  display: inline-block;
+
   // 字段高亮
   code {
     font-family: 'Roboto Mono',Source Sans Pro,Helvetica Neue,Arial,sans-serif;

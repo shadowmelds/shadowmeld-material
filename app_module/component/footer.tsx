@@ -69,6 +69,10 @@ export const navigationItem: NavigationData[] = [
         name: "组件",
         href: "/component"
     },
+    {
+        name: "3D",
+        href: "/fully/three"
+    },
 ]
 
 async function fetchData() {

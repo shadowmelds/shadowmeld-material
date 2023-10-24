@@ -403,6 +403,37 @@ span, a {
   }
 }
 
+// 背景遮罩
+.sitemask {
+  background: rgba(0,0,0,.4);
+  bottom: -200px;
+  cursor: pointer;
+  left: -200px;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: -200px;
+  top: -200px;
+  -webkit-transition: opacity .2s cubic-bezier(.4,0,.2,1),visibility .2s linear;
+  transition: opacity .2s cubic-bezier(.4,0,.2,1),visibility .2s linear;
+  visibility: hidden;
+  z-index: 998;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sitemask.visible {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  visibility: visible;
+}
+
+#dir.visible {
+  visibility: visible;
+  transform: translateX(0) !important;
+  transition: transform .2s cubic-bezier(.4, 0, .2, 1), -webkit-transform .2s cubic-bezier(.4, 0, .2, 1);
+}
 
 @keyframes page-animation {
   0% {
@@ -444,7 +475,15 @@ span, a {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1640px) {
 
+  // PostDir悬浮按钮
+  .floating-button-cta {
+    margin-right: var(--dirWidth);
+
+    .floating-button-menu {
+      visibility: hidden;
+    }
+  }
 }
 
