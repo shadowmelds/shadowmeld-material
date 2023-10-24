@@ -479,11 +479,11 @@ span, a {
 
   // PostDir悬浮按钮
   .floating-button-cta {
-    margin-right: var(--dirWidth);
+    bottom: 0;
+    right: calc((100vw / 2) - (var(--sizes-max-site-width) / 2));
 
     .floating-button-menu {
       visibility: hidden;
     }
   }
 }
-
