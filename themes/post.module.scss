@@ -40,6 +40,10 @@
     img {
       width: 100%;
       height: auto;
+      -webkit-transition-duration: 300ms;
+      transition-duration: 300ms;
+      min-height: 100%;
+      aspect-ratio: 5 / 4;
       max-width: 140px;
       max-height: 120px;
       object-fit: cover;
@@ -94,7 +98,7 @@
       img {
         max-width: initial;
         max-height: initial;
-        aspect-ratio: 16/9;
+        aspect-ratio: 5/3;
       }
 
       h3 {
@@ -108,5 +112,15 @@
         margin: var(--space-16) 0;
       }
     }
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .post {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-64);
   }
 }
