@@ -63,7 +63,10 @@ node watch
 
 ```
 # 查看后台运行的 node 程序进程 id
-ps -ax | grep node 
+ps -ax | grep node
+
+解压缩到指定目录
+unzip -d /var/www/webdav/shadowmeld-material_private my.zip
 ```
 
 ---
