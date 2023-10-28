@@ -7,7 +7,7 @@
 
   .divider {
     margin: var(--space-8) 0 var(--space-8) 0;
-    border-top-color: var(--surface-dim);
+    border-top-color: var(--outline);
   }
 
   a.dir-main-h1 {
@@ -20,7 +20,7 @@
     font-size: var(--fontSizes-sm);
 
     &:hover {
-      background-color: var(--surface-container);
+      background-color: var(--surface-1);
     }
   }
 
@@ -41,7 +41,7 @@
       color: var(--on-surface-variant);
 
       &:hover {
-        background-color: var(--surface-container);
+        background-color: var(--surface-1);
       }
     }
 
@@ -144,8 +144,8 @@
     display: block;
     overflow: auto;
     align-self: flex-end;
-    border: 2px solid var(--surface-dim);
-    background-color: var(--surface-container);
+    border: 2px solid var(--outline);
+    background-color: var(--surface-1);
     border: unset;
   }
 }

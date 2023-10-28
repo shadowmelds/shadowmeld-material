@@ -35,7 +35,7 @@
   }
   /* 滚动槽 */
   ::-webkit-scrollbar-track {
-    background: var(--surface-container);
+    background: var(--surface-1);
     color: #9ccc65;
     opacity: 0.2;
   }
@@ -55,11 +55,11 @@
     padding: 6px .6rem;
     margin: 16px 0 0 0;
     display: flex;
-    border: .1rem solid var(--surface-dim);
+    border: .1rem solid var(--on-surface-1);
     border-radius: 8px 8px 0 0;
     border-bottom-style:none;
     color: var(--on-secondary-container);
-    background-color: var(--surface-container);
+    background-color: var(--surface-1);
     align-items: center;
 
     //&::after {
@@ -74,7 +74,7 @@
   }
 
   details {
-    border: 2px solid var(--outline);
+    border: 2px solid var(--on-surface-1);
     border-radius: 12px;
     padding: var(--space-14);
 
@@ -293,7 +293,7 @@
     border-radius: 50%;
     font-size: .9em;
     font-weight: 500;
-    background-color: var(--surface-container);
+    background-color: var(--surface-1);
     font-variant-numeric: tabular-nums;
     line-height: 1.1;
     inset: .25ex 0 0 0;
@@ -316,7 +316,7 @@
     overflow-x: auto;
     margin: 16px 0 16px 0;
     padding: 0 0;
-    border: .1rem solid var(--surface-dim);
+    border: .1rem solid var(--on-surface-1);
     border-radius: 8px;
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -348,9 +348,9 @@
     margin: 0 2px;
     padding: 2px 6px;
     white-space: pre-wrap;
-    border: 1px solid var(--surface-dim);
+    border: 1px solid var(--on-surface-1);
     border-radius: 4px;
-    background-color: var(--surface-container);
+    background-color: var(--surface-1);
 
     ol {
       list-style: none;
@@ -454,7 +454,7 @@
   // 分割线
   hr {
     border: none;
-    border-bottom: 1px solid var(--surface-dim);
+    border-bottom: 1px solid var(--on-surface-1);
     margin: 2rem 0;
   }
 
@@ -487,14 +487,14 @@
 
       text-align: center;
       color: #AAA;
-      border-right: 1px solid var(--surface-dim);
+      border-right: 1px solid var(--on-surface-1);
       vertical-align: top;
       padding-right: 5px;
       white-space: nowrap;
     }
 
     tr {
-      border-top: 1px solid var(--surface-dim);
+      border-top: 1px solid var(--on-surface-1);
       background-color: var(--surface);
       margin: 0;
       padding: 0;
@@ -504,7 +504,7 @@
       }
 
       th {
-        background-color: var(--surface-container);
+        background-color: var(--surface-1);
         margin: 0;
         padding: 6px 13px;
 
@@ -532,7 +532,7 @@
     }
     th,
     td {
-      border: 1px solid var(--surface-dim);
+      border: 1px solid var(--on-surface-1);
     }
     thead {
       tr {
@@ -540,7 +540,7 @@
           border-right: 0;
           border-bottom: 0;
           &:last-child {
-            border-right: 1px solid var(--surface-dim);
+            border-right: 1px solid var(--on-surface-1);
           }
         }
         color: var(--on-secondary-container);
@@ -556,7 +556,7 @@
         }
 
         th {
-          background-color: var(--surface-container);
+          background-color: var(--surface-1);
         }
       }
     }
@@ -572,7 +572,7 @@
             color: var(--on-surface);
           }
           &:last-child {
-            border-right: 1px solid var(--surface-dim);
+            border-right: 1px solid var(--on-surface-1);
             color: var(--on-surface);
           }
         }

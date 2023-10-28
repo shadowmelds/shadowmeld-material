@@ -255,7 +255,7 @@ footer {
 
   &:hover {
     font-weight: bold;
-    background-color: var(--surface-container);
+    background-color: var(--surface-1);
   }
 
   &:focus {
@@ -379,7 +379,7 @@ span, a {
     color: var(--on-surface);
     cursor: pointer;
     text-align:center;
-    background-color: var(--surface-container);text-transform: uppercase;
+    background-color: var(--surface-1);text-transform: uppercase;
     letter-spacing: 0.0625rem;
     font-size: var(--fontSizes-3xs);
     border: 1px solid rgba(var(--primary) / 0.12);
@@ -397,7 +397,7 @@ span, a {
   }
 
   .floating-button-menu {
-    background-color: var(--surface-container);
+    background-color: var(--surface-1);
     color: var(--on-surface);
     visibility: visible;
   }

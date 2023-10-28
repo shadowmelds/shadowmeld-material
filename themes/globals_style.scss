@@ -64,28 +64,37 @@
   --box-shadow: 0 0.5em 1em -0.125em rgba(#000000, 0.2), 0 0px 0 1px rgba(#000000, 0.02);
 
   // 页面背景色
-  --surface: #f8faf0;
-  --primary: #376a20;
+  --primary: #a53362;
   --on-primary: #ffffff;
-  --on-surface: #1a1c17;
-  --on-surface-variant: #44483e;
-  --secondary: #54624c;
+  --surface: #fffbff;
+  --on-surface: #201a1b;
+  --surface-variant: #f2dde2;
+  --on-surface-variant: #514347;
+  --secondary: #74565f;
   --on-secondary: #ffffff;
-  --secondary-container: #d8e7cb;
-  --on-secondary-container: #121f0e;
-  --surface-container: #ecefe5;
-  --tertiary: #396667;
+  --secondary-container: #ffd9e2;
+  --on-secondary-container: #2b151c;
+  --tertiary: #7c5635;
   --on-tertiary: #ffffff;
-  --tertiary-container: #bbebec;
-  --on-tertiary-container: #002020;
-  --outline: #74796d;
-  --outline-variant: #c4c7bb;
-  --surface-dim: #d9dbd1;
-  --primary-container: #b9f397;
-  --error: #ba1b19;
+  --tertiary-container: #ffdcc2;
+  --on-tertiary-container: #2e1500;
+  --outline: #837377;
+  --primary-container: #ffd9e2;
+  --on-primary-container: #3e001d;
+  --error: #ba1a1a;
   --on-error: #ffffff;
   --error-contaniner: #ffdad6;
-  --on-error-contaniner: #420001;
+  --on-error-contaniner: #410002;
+  --background: #fffbff;
+  --on-background: #201a1b;
+  --primary-rgb: 165 51 98;
+  --surface-1: rgb(var(--primary-rgb) / 0.05);
+  --surface-2: rgb(var(--primary-rgb) / 0.08);
+  --surface-3: rgb(var(--primary-rgb) / 0.11);
+  --surface-4: rgb(var(--primary-rgb) / 0.12);
+  --surface-5: rgb(var(--primary-rgb) / 0.14);
+  --on-surface-rgb: 32 26 27;
+  --on-surface-1: rgb(var(--on-surface-rgb) / 0.14);
 
 
 
@@ -106,28 +115,37 @@
 
 /* 暗色模式 */
 .dark, .dark-mode {
-  --surface: #12140d;
-  --primary: #9dd67d;
-  --on-primary: #133800;
-  --on-surface: #e3e3dc;
-  --on-surface-variant: #c4c7bb;
-  --secondary: #becab0;
-  --on-secondary: #283520;
-  --secondary-container: #3e4935;
-  --on-secondary-container: #d9e7cb;
-  --surface-container: #1e211a;
-  --tertiary: #9fcfd0;
-  --on-tertiary: #003837;
-  --tertiary-container: #1e4d4e;
-  --on-tertiary-container: #bbebec;
-  --outline: #8c9286;
-  --outline-variant: #44483e;
-  --surface-dim: #363934;
-  --primary-container: #205105;
+  --primary: #ffb0c8;
+  --on-primary: #650033;
+  --surface: #201a1b;
+  --on-surface: #ebe0e1;
+  --surface-variant: #514347;
+  --on-surface-variant: #d5c2c6;
+  --secondary: #e3bdc6;
+  --on-secondary: #422931;
+  --secondary-container: #5a3f47;
+  --on-secondary-container: #ffd9e2;
+  --tertiary: #efbd94;
+  --on-tertiary: #48290c;
+  --tertiary-container: #623f20;
+  --on-tertiary-container: #ffdcc2;
+  --outline: #9e8c90;
+  --primary-container: #86194a;
+  --on-primary-container: #ffd9e2;
   --error: #ffb4ab;
   --on-error: #690005;
-  --error-contaniner: #930109;
-  --on-error-contaniner: #ffb4ab;
+  --error-contaniner: #93000a;
+  --on-error-contaniner: #ffdad6;
+  --background: #201a1b;
+  --on-background: #ebe0e1;
+  --primary-rgb: 255 176 200;
+  --surface-1: rgb(var(--primary-rgb) / 0.05);
+  --surface-2: rgb(var(--primary-rgb) / 0.08);
+  --surface-3: rgb(var(--primary-rgb) / 0.11);
+  --surface-4: rgb(var(--primary-rgb) / 0.12);
+  --surface-5: rgb(var(--primary-rgb) / 0.14);
+  --on-surface-rgb: 235 224 225;
+  --outline-1: rgb(var(--on-surface-rgb) / 0.14);
 
   // SVG颜色
   path {
