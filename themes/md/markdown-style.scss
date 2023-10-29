@@ -98,6 +98,14 @@
     margin-bottom: var(--space-12);
   }
 
+  .color_positive{
+    color: var(--tertiary);
+  }
+
+  .color_passive{
+    color: var(--error);
+  }
+
   // 更新时间
   .update-date {
     font-size: var(--fontSizes-xs);
@@ -372,8 +380,8 @@
   .blog-info-bg {
     padding: clamp(1.375rem, 1.2rem + 0.89vw, 2rem);
     border-radius: 10px;
-    background: var(--tertiary-container);
-    color: var(--on-tertiary-container);
+    background: var(--tertiary);
+    color: var(--on-tertiary);
     margin-top: clamp(2.375rem, 1.98rem + 1.96vw, 3.75rem);
     margin-bottom: clamp(1rem, 2.5vw, 2rem);
 
