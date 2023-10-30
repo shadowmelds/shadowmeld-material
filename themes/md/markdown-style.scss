@@ -55,7 +55,7 @@
     padding: 6px .6rem;
     margin: 16px 0 0 0;
     display: flex;
-    border: .1rem solid var(--on-surface-1);
+    border: .1rem solid var(--outline-1);
     border-radius: 8px 8px 0 0;
     border-bottom-style:none;
     color: var(--on-secondary-container);
@@ -74,7 +74,7 @@
   }
 
   details {
-    border: 2px solid var(--on-surface-1);
+    border: 2px solid var(--outline-1);
     border-radius: 12px;
     padding: var(--space-14);
 
@@ -324,7 +324,7 @@
     overflow-x: auto;
     margin: 16px 0 16px 0;
     padding: 0 0;
-    border: .1rem solid var(--on-surface-1);
+    border: .1rem solid var(--outline-1);
     border-radius: 8px;
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -356,7 +356,7 @@
     margin: 0 2px;
     padding: 2px 6px;
     white-space: pre-wrap;
-    border: 1px solid var(--on-surface-1);
+    border: 1px solid var(--outline-1);
     border-radius: 4px;
     background-color: var(--surface-1);
 
@@ -401,8 +401,12 @@
     }
 
     strong, code {
-      color: #174ea6;
+      color: var(--tertiary-container);
       margin: 0;
+    }
+
+    code {
+      border-color: var(--outline-1);
     }
 
   }
@@ -462,7 +466,7 @@
   // 分割线
   hr {
     border: none;
-    border-bottom: 1px solid var(--on-surface-1);
+    border-bottom: 1px solid var(--outline-1);
     margin: 2rem 0;
   }
 
@@ -495,14 +499,14 @@
 
       text-align: center;
       color: #AAA;
-      border-right: 1px solid var(--on-surface-1);
+      border-right: 1px solid var(--outline-1);
       vertical-align: top;
       padding-right: 5px;
       white-space: nowrap;
     }
 
     tr {
-      border-top: 1px solid var(--on-surface-1);
+      border-top: 1px solid var(--outline-1);
       background-color: var(--surface);
       margin: 0;
       padding: 0;
@@ -540,7 +544,7 @@
     }
     th,
     td {
-      border: 1px solid var(--on-surface-1);
+      border: 1px solid var(--outline-1);
     }
     thead {
       tr {
@@ -548,7 +552,7 @@
           border-right: 0;
           border-bottom: 0;
           &:last-child {
-            border-right: 1px solid var(--on-surface-1);
+            border-right: 1px solid var(--outline-1);
           }
         }
         color: var(--on-secondary-container);
@@ -580,7 +584,7 @@
             color: var(--on-surface);
           }
           &:last-child {
-            border-right: 1px solid var(--on-surface-1);
+            border-right: 1px solid var(--outline-1);
             color: var(--on-surface);
           }
         }
