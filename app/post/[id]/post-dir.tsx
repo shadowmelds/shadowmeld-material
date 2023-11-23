@@ -23,18 +23,18 @@ export function PostDir({loadDir}) {
             heading.id = `anchor-${i}`;
 
             if (heading.nodeName === "H1") {
-                setH1({title: heading.innerText, url: `anchor-${i}`})
+                setH1({title: heading.textContent, url: `anchor-${i}`})
             }
 
             if (heading.nodeName === "H2") {
-                lastH2 = {h2: {title: heading.innerText, url: `anchor-${i}`, child: []}}
+                lastH2 = {h2: {title: heading.textContent, url: `anchor-${i}`, child: []}}
                 lastH3 = null
                 myDirData.push(lastH2)
             }
 
             if (heading.nodeName === "H3") {
 
-                lastH3 = {h3: {title: heading.innerText, url: `anchor-${i}`, child: []}}
+                lastH3 = {h3: {title: heading.textContent, url: `anchor-${i}`, child: []}}
 
                 if (lastH2 != null) {
                     lastH2.h2.child.push(lastH3)
@@ -44,7 +44,7 @@ export function PostDir({loadDir}) {
             }
 
             if (heading.nodeName === "H4") {
-                const dirItem = {h4: {title: heading.innerText, url: `anchor-${i}`}}
+                const dirItem = {h4: {title: heading.textContent, url: `anchor-${i}`}}
                 if (lastH3 != null) {
                     lastH3.h3.child.push(dirItem)
                 } else if (lastH2 != null) {
